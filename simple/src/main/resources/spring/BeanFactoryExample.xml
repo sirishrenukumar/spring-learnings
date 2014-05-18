@@ -5,5 +5,10 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!-- bean definitions here -->
-	<bean class="simple.BeanFactoryExample.Car"></bean>
+	<bean class="simple.BeanFactoryExample.Car">
+	<constructor-arg ref="engine"></constructor-arg>
+	</bean>
+	
+	<bean   class="simple.BeanFactoryExample.Engine"></bean>
+	<bean id="engine" class="simple.BeanFactoryExample.Engine"></bean>
 </beans>
