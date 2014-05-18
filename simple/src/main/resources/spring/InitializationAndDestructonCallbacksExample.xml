@@ -6,4 +6,5 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 
 <!-- bean definitions here -->
 
+<bean class="simple.InitializationAndDestructonCallbacksExample.Team" init-method="initialize"></bean>
 </beans>
